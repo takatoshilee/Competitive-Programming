@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	long long n, count{}, minNotes = 1;
+	cin >> n;
+	
+	for(int i = n; i >= 1; i--) {
+		if((i & (i-1)) == 0) {
+			minNotes = i;
+			break;
+		}
+		
+	}
+	for(long long i = minNotes; i >= 1; i /= 2) {
+		if(n >= i) {
+			n -= i;
+			count++;
+		}
+	}
+	cout << count;
+}
+
+
+
