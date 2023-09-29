@@ -9,7 +9,7 @@ int main() {
 	for(int i = 0; i < n; i++) {
 		int input;
 		cin >> input;
-		v.push_back(input);
+		v.push_back(input);/''
 	}
 	sort(v.begin(), v.end());
 	for(int i = 0; i < n; i++) {
